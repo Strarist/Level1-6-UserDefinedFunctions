@@ -25,3 +25,6 @@ Enter first number: 10\
 Enter second number: 10\
 Sum: 20
 
+
+# Ques.2
+
