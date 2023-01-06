@@ -1,4 +1,5 @@
-# Ques. 1 
+# Ques.1 
+
 Make a function sum which takes two numbers as input and print the sum inside
 the function.
 
@@ -25,7 +26,8 @@ Enter first number: 10\
 Enter second number: 10\
 Sum: 20
 
-#Ques. 2
+#Ques.2
+
 Make a function avg which takes four numbers as input and print the average of the numbers
 inside the function.
 
