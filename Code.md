@@ -1,4 +1,4 @@
-# Ques.1 
+# Question 1:
 Make a function sum which takes two numbers as input and print the sum inside
 the function.
 
@@ -11,19 +11,28 @@ def sum():
 sum()
 ```
 Testcase 1: \
-Enter first number: 5\
-Enter second number: 3\
-Sum: 8
+Input:
+>Enter first number: 5\
+>Enter second number: 3 
+
+Output:
+> Sum: 8
 
 Testcase 2:\
-Enter first number: 12\
-Enter second number: 9\
-Sum: 21
+Input:
+>Enter first number: 12\
+>Enter second number: 9
+
+Output:
+> Sum: 21
 
 Testcase 3:\
-Enter first number: 10\
-Enter second number: 10\
-Sum: 20
+Input:
+>Enter first number: 10\
+>Enter second number: 10
+
+Output:
+> Sum: 20
 
 # Ques.2
 Make a function avg which takes four numbers as input and print the average of the numbers
@@ -40,22 +49,31 @@ def avg():
 avg()
 ```
 Testcase 1: \
-Enter first number: 5\
+Input:
+>Enter first number: 5\
 Enter second number: 6\
 Enter third number: 7\
-Enter fourth number: 2\
-Average: 5
+Enter fourth number: 2
+
+Output:
+>Average: 5
 
 Testcase 2:\
-Enter first number: 8\
+Input:
+>Enter first number: 8\
 Enter second number: 10\
 Enter third number: 3\
-Enter fourth number: 9\
-Average: 7.5
+Enter fourth number: 9
+
+Output:
+>Average: 7.5
 
 Testcase 3:\
-Enter first number: 1\
+Input:
+>Enter first number: 1\
 Enter second number: 9\
 Enter third number: 21\
-Enter fourth number: 12\
-Average: 10.75
+Enter fourth number: 12
+
+Output:
+>Average: 10.75
