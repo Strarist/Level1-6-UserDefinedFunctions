@@ -150,3 +150,124 @@ Output:
 >Maximum number is: 26
 
 # Question 5:
+Make a function fact() and take a number as input from user
+and return factorial of that number and print it outside
+the function.(Don't use in-built function).
+
+``` python
+def fact():
+    n=int(input('Enter the number: '))
+    f=1
+    for i in range(1,n+1):
+        f*=i
+    return f
+factorial=fact()
+print('Factorial:',factorial)
+```
+Testcase 1:\
+Input:
+>Enter the number: 5
+
+Output:
+>Factorial: 120
+
+Testcase 2:\
+Input:
+>Enter the number: 6
+
+Output:
+>Factorial: 720
+
+Testcase 3:\
+Input:
+>Enter the number: 3
+
+Output:
+>Factorial: 6
+
+# Question 6:
+Make a function prime() and take a number as input from
+the user and check whether it is prime or not.
+
+``` python
+def prime():
+    num=int(input("Enter the number: "))
+    c=0
+    for i in range(2,num):
+        if num%i==0:
+            c+=1
+    if c==0:
+        print('Prime')
+    else:
+        print('Non-prime')
+prime()
+```
+Testcase 1:\
+Input:
+>Enter the number: 8
+
+Output:
+>Non-prime
+
+Testcase 2:\
+Input:
+>Enter the number: 127
+
+Ouput:
+>Prime
+
+Testcase 3:\
+Input:
+>Enter the number: 19
+
+Output:
+>Prime
+
+# Question 7:
+Make a function primebtw() and take the starting number and ending number
+as input from user and print the prime numbers between them inclusive of the boundary
+numbers. Example: a<= primebtw <=b
+``` python
+def prime():
+    num1=int(input("Enter the starting number: "))
+    num2=int(input("Enter the ending number: "))
+    for k in range(num1,num2+1):
+        c=0
+        for i in range(2,k):
+            if k%i==0:
+                c+=1
+        if c==0:
+            print(k)
+prime()
+```
+Testcase 1:
+Input:
+>Enter the starting number: 2\
+Enter the ending number: 10
+
+Output:
+>2\
+3\
+5\
+7
+
+Testcase 2:
+Input:
+>Enter the starting number: 11\
+Enter the ending number: 13
+
+Output:
+>11\
+13
+
+Testcase 3:
+Input:
+>Enter the starting number: 7\
+Enter the ending number: 20
+
+Output:
+>7\
+11\
+13\
+17\
+19
