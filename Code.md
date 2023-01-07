@@ -856,3 +856,383 @@ Output:
 Lowercase characters:  15\
 Spaces:  1
 
+# Question 23:
+Write a program which has a user defined function which accepts a string as input and
+find the longest and shortest word in that string.
+``` python
+#solution
+def coun():
+    s=input('Enter the string: ')
+    s=s.split()
+    maxs='';mins=s[0];mi=len(s[0]);ma=0
+    for i in s:
+        x=len(i)
+        if x>ma:
+            ma=x
+            maxs=i
+        elif x<mi:
+            mi=x
+            mins=i
+    print('Longest word: ',maxs)
+    print('Shortest word: ',mins)
+coun()
+```
+Testcase 1:\
+Input:
+>Enter the string: Bennett University
+
+Output:
+>Longest word:  University\
+Shortest word:  Bennett
+
+Testcase 2:\
+Input:
+>Enter the string: All that shines is not Gold
+
+Output:
+>Longest word:  shines\
+Shortest word:  is
+
+Testcase 3:\
+Input:
+>Enter the string: India has the fastest growing GDP rate.
+
+Output:
+>Longest word:  fastest\
+Shortest word:  has
+
+# Question 24:
+Write a program which has a user defined function which take 2 numbers as input and a string
+which say (and,or,xor) and accordingly we perform the bitwise operations between the two numbers.
+print the result inside the function.
+```
+#solution
+def bit():
+    a=int(input('Enter the first number: '))
+    b=int(input('Enter the second number: '))
+    s=input('Enter the function to be performed: ')
+    if s=='and':
+        print(f'{a} & {b}: {a&b}')
+    elif s=='or':
+        print(f'{a} | {b}: {a|b}')
+    elif s=='xor':
+        print(f'{a} ^ {b}: {a^b}')
+bit()
+```
+Testcase 1:\
+Input:
+>Enter the first number: 3\
+Enter the second number: 7\
+Enter the function to be performed: and
+
+Output:
+>3 & 7: 3
+
+Testcase 2:\
+Input:
+>Enter the first number: 6\
+Enter the second number: 3\
+Enter the function to be performed: or
+
+Output:
+>6 | 3: 7
+
+Testcase 3:\
+Input:
+>Enter the first number: 3\
+Enter the second number: 8\
+Enter the function to be performed: xor
+
+Output:
+>3 ^ 8: 11
+
+# Question 25:
+Write a program which has a user defined function which takes a starting number and an ending number
+and print all the numbers between them except the multiples of 2,3,5 and 7.
+``` python
+#solution
+def remove():
+    a=int(input('Enter the starting number: '))
+    b=int(input('Enter the ending number: '))
+    for i in range(a,b+1):
+        if i%2==0:
+            pass
+        elif i%3==0:
+            pass
+        elif i%5==0:
+            pass
+        elif i%7==0:
+            pass
+        else:
+            print(i)
+remove()
+```
+Testcase 1:\
+Input:
+> Enter the starting number: 10\
+Enter the ending number: 35
+
+Output:
+>11\
+13\
+17\
+19\
+23\
+29\
+31
+
+Testcase 2:\
+Input:
+>Enter the starting number: 25\
+Enter the ending number: 50
+
+Output:
+>29\
+31\
+37\
+41\
+43\
+47
+
+Testcase 3:\
+Input:
+>Enter the starting number: 50\
+Enter the ending number: 75
+
+Output:
+>53\
+59\
+61\
+67\
+71\
+73
+
+# Question 26:
+Make a function which takes input as a list of numbers separated by commas(',') and then remove the repeating elements 
+and then sort it. Print the resultant list inside the list.
+``` python
+#solution
+def rep():
+    a=input('Enter list of numbers separated by commas(,): ')
+    a=a.split(',')
+    s=[]
+    for i in a:
+        if int(i) not in s:
+            s.append(int(i))
+    s.sort()
+    print(s)
+rep()
+```
+Testcase 1:\
+Input:
+>Enter list of numbers separated by commas(,): 5,6,2,35,2,4,5,2,6,4,7
+
+Output:
+>[2, 4, 5, 6, 7, 35]
+
+Testcase 2:\
+Input:
+>Enter list of numbers separated by commas(,): 5,6,2,35,2,4,5,2,6,4,7
+
+Output:
+>[2, 4, 5, 6, 7, 35]
+
+Testcase 3:\
+Input:
+>Enter list of numbers separated by commas(,): 5,6,2,35,2,4,5,2,6,4,7
+
+Output:
+>[2, 4, 5, 6, 7, 35]
+
+# Question 27:
+Write a program which has a user defined function which takes n as input form user
+and then print n terms of fibonacci series.
+Fibonacci series => 0 1 1 2 3 5 8 13 21...
+``` python
+#solution
+def fib():
+    n=int(input('Enter the number of terms: '))
+    s=0;d=1;c=1
+    if n==1:
+        print(s)
+    elif n==2:
+        print(s,d)
+    else:
+        print(0,1,end=' ')
+        for i in range(n-2):
+            c=s+d
+            s=d
+            d=c
+            print(c,end=' ')
+fib()
+```
+Testcase 1:\
+Input:
+>Enter the number of terms: 2
+
+Output:
+>0 1
+
+Testcase 2:\
+Input:
+>Enter the number of terms: 5
+
+Output:
+>0 1 1 2 3
+
+Testcase 3:\
+Input:
+>Enter the number of terms: 5
+
+Output:
+>0 1 1 2 3
+
+# Question 28:
+Write a program which has a user_defined functions for calculating area of square, circle and rectangle by
+taking input as side, radius, length and breadth and print the areas respectively.
+``` python
+#solution
+def square():
+    side=int(input('Enter side of square: '))
+    return side*side
+def circle():
+    radius=int(input('Enter radius of circle: '))
+    return 3.14*radius*radius
+def rectangle():
+    length=int(input('Enter length of rectangle: '))
+    breadth=int(input('Enter breadth of rectangle: '))
+    return length*breadth
+s=square()
+c=circle()
+r=rectangle()
+print('Area of square is: ',s)
+print('Area of circle is: ',c)
+print('Area of rectangle is: ',r)
+
+```
+Testcase 1:\
+Input:
+>Enter side of square: 4\
+Enter radius of circle: 3\
+Enter length of rectangle: 6\
+Enter breadth of rectangle: 8
+
+Output:
+>Area of square is:  16\
+Area of circle is:  28.259999999999998\
+Area of rectangle is:  48
+
+Testcase 2:\
+Input:
+>Enter side of square: 4\
+Enter radius of circle: 3\
+Enter length of rectangle: 6\
+Enter breadth of rectangle: 8
+
+Output:
+>Area of square is:  16\
+Area of circle is:  28.259999999999998\
+Area of rectangle is:  48
+
+Testcase 3:\
+Input:
+>Enter side of square: 4\
+Enter radius of circle: 3\
+Enter length of rectangle: 6\
+Enter breadth of rectangle: 8
+
+Output:
+>Area of square is:  16\
+Area of circle is:  28.259999999999998\
+Area of rectangle is:  48
+
+# Question 29:
+Write a program which has a user-defined function numer() which take a date of birth as input
+and calculate the numerology number using it. Numerology number is calculated by add each digit 
+of the date of birth and if the sum is a 2-digit number then it again adds its digits again untill
+the sum comes to be a single digit number.
+Numerology number => 16-09-2002 => 1+6+9+2+2=20 => 2+0=2
+Hence the numerology number is 2.
+``` python
+#solution
+def numer():
+    x=input('Enter the date of birth( dd-mm-yyyy) form: ')
+    x=x.split('-')
+    s=0;c=0
+    for i in x:
+        for j in i:
+            s+=int(j)
+    while(s>9):
+        for i in str(s):
+            c+=int(i)
+        if c>9:
+            s=c
+            c=0
+            continue
+        else:
+            s=c
+    print('Numerology number is: ',s)
+numer()
+```
+Testcase 1:\
+Input:
+>Enter the date of birth( dd-mm-yyyy) form: 21-11-1981
+
+Output:
+>Numerology number is:  6
+
+Testcase 2:\
+Input:
+>Enter the date of birth( dd-mm-yyyy) form: 14-08-1975
+
+Output:
+>Numerology number is:  8
+
+Testcase 3:\
+Input:
+>Enter the date of birth( dd-mm-yyyy) form: 01-01-1951
+
+Output:
+>Numerology number is:  9
+
+# Question 30:
+Write a program which has a user-defined function which takes input from user as numerator and denominator
+and write them in simplest form. For example: 40/58=> 20/27
+```
+#solution
+def sim():
+    a=int(input('Enter numerator: '))
+    b=int(input('Enter denominator: '))
+    c=min(a,b)
+    hcf=0
+    for i in range(1,c+1):
+        if a%i==0 and b%i==0:
+            hcf=i
+    a1=a//hcf
+    b1=b//hcf
+    print('{}/{}'.format(a1,b1))
+sim()
+```
+Testcase 1:\
+Input:
+>Enter numerator: 4\
+Enter denominator: 32
+
+Output:
+>1/8
+
+Testcase 2:\
+Input:
+>Enter numerator: 4/
+Enter denominator: 32
+
+Output:
+>1/8
+
+Testcase 3:\
+Input:
+>Enter numerator: 81/
+Enter denominator: 126
+
+Ouput:
+>9/14
