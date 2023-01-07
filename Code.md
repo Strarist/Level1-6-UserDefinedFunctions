@@ -2,8 +2,8 @@
 Make a function sum() which takes two numbers as input and print the sum inside
 the function.
 
-#solution
 ``` python
+#solution
 def sum():
     a=int(input("Enter first number:"))
     b=int(input("Enter second number:"))
@@ -38,8 +38,8 @@ Output:
 Make a function avg() which takes four numbers as input and print the average of the numbers
 inside the function.
 
-#solution
 ``` python
+#solution
 def avg():
     a=int(input("Enter first number:"))
     b=int(input("Enter second number:"))
@@ -82,8 +82,8 @@ Output:
 Make a function reverse() and take a string as input
 and print it after reversing it inside the function.
 
-#solution
 ``` python
+#solution
 def reverse():
     a=input("Enter the word: ")
     print(a[::-1])
@@ -115,6 +115,7 @@ Make a function maximum() and take three numbers from user
 as input and find the maximum number out of the three.
 
 ``` python
+#solution
 def maxim():
     a=int(input("Enter first number: "))
     b=int(input("Enter second number: "))
@@ -155,6 +156,7 @@ and return factorial of that number and print it outside
 the function.(Don't use in-built function).
 
 ``` python
+#solution
 def fact():
     n=int(input('Enter the number: '))
     f=1
@@ -190,6 +192,7 @@ Make a function prime() and take a number as input from
 the user and check whether it is prime or not.
 
 ``` python
+#solution
 def prime():
     num=int(input("Enter the number: "))
     c=0
@@ -227,7 +230,9 @@ Output:
 Make a function primebtw() and take the starting number and ending number
 as input from user and print the prime numbers between them inclusive of the boundary
 numbers. Example: a<= primebtw <=b
+
 ``` python
+#solution
 def prime():
     num1=int(input("Enter the starting number: "))
     num2=int(input("Enter the ending number: "))
@@ -277,6 +282,7 @@ Make a function countvowel() to take a string as input from user and count the n
 of vowels in it and return it and print it outside the function.
 
 ``` python
+#solution
 def countvowel():
     word=input('Enter the word: ')
     c=0
@@ -313,6 +319,7 @@ Make a function replace() and take a string as input and replace all the
 vowels with '#' and print the resultant string inside the function.
 
 ``` python
+#solution
 def replace():
     s=''
     word=input('Enter the word: ')
@@ -351,6 +358,7 @@ rate of interest per annum and calculate the simple interest and return it to
 and print it outside the function.
 
 ``` python
+#solution
 def si():
     p=int(input('Enter principal amount: '))
     t=float(input('Enter time( in years): '))
@@ -392,6 +400,7 @@ rate of interest calculated yearly and calculate compound interest and print it 
 the function(round off the answer upto 2 decimal points).
 
 ``` python
+#solution
 def ci():
     p=int(input('Enter principal amount: '))
     t=float(input('Enter time( in years): '))
@@ -426,3 +435,424 @@ Enter rate of interest( calculated yearly): 1.5
 
 Output:
 >Compound interest:  15.11
+
+# Question 12:
+Make a function cap() and take a string as input from user and convert the string to uppercase
+and print it inside the function.
+
+``` python
+#solution
+def cap():
+    s=input("Enter the string: ")
+    s=s.upper()
+    print(s)
+cap()
+```
+Testcase 1:\
+Input:
+>Enter the string: Bennett
+
+Output:
+>BENNETT
+
+Testcase 2:\
+Input:
+>Enter the string: Hacker Rank
+
+Output:
+>HACKER RANK
+
+Testcase 3:\
+Input:
+>Enter the string: Strarist
+
+Output:
+>STRARIST
+
+# Question 13:
+Make a function that takes a string as input and capitalize only the first letters of every word
+and print the resultant string.
+
+``` python
+#solution
+def caps():
+    s=input('Enter the string: ')
+    s=s.title()
+    print(s)
+caps()
+```
+Testcase 1:\
+Input:
+>Enter the string: a Quick brown fox jumped over the lazy dog.
+
+Output:
+>A Quick Brown Fox Jumped Over The Lazy Dog.
+
+Testcase 2:\
+Input:
+>Enter the string: Bennett university is in tech Zone-2
+
+Output:
+>Bennett University Is In Tech Zone-2
+
+Testcase 3:\
+Input:
+>Enter the string: abra ca dabra
+
+Output:
+>Abra Ca Dabra
+
+# Question 14:
+Write a program which has a user defined function btw() which takes a starting number and an ending number
+and then print pallindrome numbers between the two numbers including them.
+
+``` python
+#solution
+def btw():
+    a=int(input('Enter the starting number: '))
+    b=int(input('Enter the ending number: '))
+    for i in range(a,b+1):
+        s=str(i)[::-1]
+        if s==str(i):
+            print(i)
+btw()
+```
+Testcase 1:\
+Input:
+>Enter the starting number(greater than 10): 12\
+Enter the ending number: 25
+
+Output:
+>22
+
+Testcase 2:\
+Input:
+>Enter the starting number(greater than 10): 15\
+Enter the ending number: 90
+
+Output:
+>22\
+33\
+44\
+55\
+66\
+77\
+88
+
+Testcase 3:\
+Input:
+>Enter the starting number(greater than 10): 500\
+Enter the ending number: 600
+
+Output:
+>505\
+515\
+525\
+535\
+545\
+555\
+565\
+575\
+585\
+595
+
+# Question 15:
+Write a program which has a user-defined function which takes a number as input and
+print it's binary conversion inside the function.
+
+``` python
+#solution
+def bn():
+    num=int(input("Enter the number: "))
+    print(bin(num))
+bn()
+```
+Testcase 1:\
+Input:
+>Enter the number: 5
+
+Output:
+>0b101
+
+Testcase 2:\
+Input:
+>Enter the number: 14
+
+Output:
+>0b1110
+
+Testcase 3:\
+Input:
+>Enter the number: 50
+
+Output:
+>0b110010
+
+# Question 16:
+Write a program which has a function rem() which removes all the zeroes from the number
+taken as input and return it and print the result outside the function.
+
+``` python
+#solution
+def rem():
+    num=int(input('Enter the number: '))
+    s=''
+    for i in str(num):
+        if i!='0':
+            s+=i
+    return int(s)
+number=rem()
+print(number)
+```
+Testcase 1:\
+Input:
+>Enter the number: 1012011023
+
+Output:
+>1121123
+
+Testcase 2:\
+Input:
+>Enter the number: 20023201200
+
+Output:
+>223212
+
+Testcase 3:\
+Input:
+>Enter the number: 80056904
+
+Output:
+>85694
+
+# Question 17:
+Write a program which has a function find() in which user take a string as input and 
+then takes another string as input and check whether the later one is present in the
+first one or not. Print True/False either ways.
+
+``` python
+#solution
+def find():
+    a=input('Enter the string: ')
+    b=input('Enter the string to be found: ')
+    print(b in a)
+find()
+```
+Testcase 1:\
+Input:
+>Enter the string: Bennett is ugc certified university\
+Enter the string to be found: ugc
+
+Output:
+>True
+
+Testcase 2:\
+Input:
+>Enter the string: I have to make a ppt\
+Enter the string to be found: presentation
+
+Output:
+>False
+
+Testcase 3:\
+Input:
+>Enter the string: python is high level language\
+Enter the string to be found: high
+
+Output:
+>True
+
+# Question 18:
+Write a function ptrn() which takes input in n and then print the pattern with n rows.
+
+``` python
+#solution
+def ptrn():
+    n=int(input("Enter the number of rows: "))
+    for i in range(n,0,-1):
+        for j in range(i,0,-1):
+            print(j,end='')
+        print('')
+ptrn()
+```
+Testcase 1:\
+Input:
+>Enter the number of rows: 3
+
+Ouput:
+>321\
+21\
+1
+
+Testcase 2:\
+Input:
+>Enter the number of rows: 5
+
+Output:
+>54321\
+4321\
+321\
+21\
+1
+
+Testcase 3:\
+Input:
+>Enter the number of rows: 8
+
+Ouput:
+>87654321\
+7654321\
+654321\
+54321\
+4321\
+321\
+21\
+1
+
+# Question 19:
+Write a function odev() and take a number as input and print if the number is odd or even.
+
+``` python
+#solution
+def odev():
+    num=int(input('Enter the number: '))
+    if num%2==0:
+        print('Number is even')
+    else:
+        print('Number is odd')
+odev()
+```
+Testcase 1:\
+Input:
+>Enter the number: 29
+
+Output:
+>Number is odd
+
+Testcase 2:\
+Input:
+>Enter the number: 11
+
+Output:
+>Number is odd
+
+Testcase 3:\
+Input:
+>Enter the number: 1620
+
+Output:
+>Number is even
+
+# Question 20:
+Write a program which has a user defined function spcl() which takes input from the user as a number 
+and then checks if the number is special or not. A special number is one whose sum of cube of each digits is equal
+to the original number.
+153=1^3+5^3+3^3 => 1+125+27 = 153
+
+``` python
+#solution
+def spcl():
+    num=int(input('Enter the number: '))
+    s=0
+    for i in str(num):
+        s+=int(i)**3
+    if s==num:
+        print('Number is a special number')
+    else:
+        print('Number is not a special number')
+spcl()
+```
+Testcase 1:\
+Input:
+>Enter the number: 121
+
+Output:
+>Number is not a special number
+
+# Question 21:
+Make a program which has a user defined function perf() which takes input from the user as a number 
+and then checks if the number is perfect or not. A perfect number is one whose sum of all the factors
+including 1 and excluding the number itself.
+6= 1+2+3 =>6
+``` python
+#solution
+def perf():
+    num=int(input('Enter the number: '))
+    s=0
+    for i in range(1,num):
+        if num%i==0:
+            s+=i
+    if s==num:
+        print('Number is a perfect number')
+    else:
+        print('Number is not a perfect number')
+perf()
+```
+Testcase 1:\
+Input:
+>Enter the number: 28
+
+Output:
+>Number is a perfect number
+
+Testcase 2:\
+Input:
+>Enter the number: 8
+
+Output:
+>Number is not a perfect number
+
+Testcase 3:\
+Input:
+>Enter the number: 496
+
+Output:
+>Number is a perfect number
+
+# Question 22:
+Write a program which has a user defined function which takes input from the user as a string 
+and count the number of uppercase letters, lowercase letters and spaces in the string and print 
+it insider the string.
+``` python
+#solution
+def cls():
+    a=input('Enter the string: ')
+    c=0;d=0;e=0
+    for i in a:
+        if i.isupper():
+            c+=1
+        elif i.islower():
+            d+=1
+        elif i==' ':
+            e+=1
+    print('Uppercase characters: ',c)
+    print('Lowercase characters: ',d)
+    print('Spaces: ',e)
+cls()
+```
+Testcase 1:\
+Input:
+>Enter the string: This CouLd have Been dOne.
+
+Output:
+>Uppercase characters:  5\
+Lowercase characters:  16\
+Spaces:  4
+
+Testcase 2:\
+Input:
+>Enter the string: Values MUst Be valued more than The valuables .
+
+Output:
+>Uppercase characters:  5\
+Lowercase characters:  33\
+Spaces:  8
+
+Testcase 3:\
+>Enter the string: VasudhaiV KatumBakam
+
+Output:
+>Uppercase characters:  4\
+Lowercase characters:  15\
+Spaces:  1
+
