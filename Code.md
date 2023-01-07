@@ -79,7 +79,7 @@ Output:
 >Average: 10.75
 
 # Question 3:
-Make a function reverse() and take a word as input
+Make a function reverse() and take a string as input
 and print it after reversing it inside the function.
 
 #solution
@@ -271,3 +271,158 @@ Output:
 13\
 17\
 19
+
+# Question 8:
+Make a function countvowel() to take a string as input from user and count the number
+of vowels in it and return it and print it outside the function.
+
+``` python
+def countvowel():
+    word=input('Enter the word: ')
+    c=0
+    for i in word:
+        if i in 'aeiouAEIOU':
+            c+=1
+    return c
+count=countvowel()
+print('Vowel count:',count)
+```
+Testcase 1:\
+Input:
+>Enter the word: Bennett University
+
+Output:
+>Vowel count: 6
+
+Testcase 2:\
+Input:
+>Enter the word: Greater Noida
+
+Output:
+>Vowel count: 6
+
+Testcase 3:\
+Input:
+>Enter the word: VikramAditya
+
+Output:
+>Vowel count: 5
+
+# Question 9:
+Make a function replace() and take a string as input and replace all the
+vowels with '#' and print the resultant string inside the function.
+
+``` python
+def replace():
+    s=''
+    word=input('Enter the word: ')
+    for i in word:
+        if i in 'aeiouAEIOU':
+            s+='#'
+        else:
+            s+=i
+    print(s)
+replace()
+```
+Testcase 1:\
+Input:
+>Enter the word: Bennett University
+
+Output:
+>B#nn#tt #n#v#rs#ty
+
+Testcase 2:\
+Input:
+>Enter the word: Narendra Modi
+
+Output:
+>N#r#ndr# M#d#
+
+Testcase 3:\
+Input:
+>Enter the word: Samuel Kharbanda
+
+Output:
+>S#m##l Kh#rb#nd#
+
+# Question 10:
+Make a function si() and take input from user as principal amount, time and
+rate of interest per annum and calculate the simple interest and return it to
+and print it outside the function.
+
+``` python
+def si():
+    p=int(input('Enter principal amount: '))
+    t=float(input('Enter time( in years): '))
+    r=float(input('Enter rate of interest( per annum): '))
+    return (p*r*t)/100
+SI=si()
+print("Simple interst: ",SI)
+```
+Testcase 1:\
+Input:
+>Enter principal amount: 10000\
+Enter time( in years): 5\
+Enter rate of interest( per annum): 2.5
+
+Output:
+>Simple interest:  1250.0
+
+Testcase 2:\
+Input:
+>Enter principal amount: 50000\
+Enter time( in years): 10\
+Enter rate of interest( per annum): 7.5
+
+Output:
+>Simple interest:  37500.0
+
+Testcase 3:\
+Input:
+>Enter principal amount: 152\
+Enter time( in years): 15\
+Enter rate of interest( per annum):15.3652
+
+Output:
+>Simple interest:  350.32656000000003
+
+# Question 11:
+Make a function ci() and take input from user as principal amount, time in year and
+rate of interest calculated yearly and calculate compound interest and print it inside
+the function(round off the answer upto 2 decimal points).
+
+``` python
+def ci():
+    p=int(input('Enter principal amount: '))
+    t=float(input('Enter time( in years): '))
+    r=float(input('Enter rate of interest( calculated yearly): '))
+    a=p*((1+(r/100))**t)
+    print('Compound interest: ',"%.2f"%(a-p))
+ci()
+```
+Testcase 1:\
+Input:
+>Enter principal amount: 50000\
+Enter time( in years): 2\
+Enter rate of interest( calculated yearly): 5
+
+Output:
+>Compound interest:  5125.00
+
+Testcase 2:\
+Input:
+>Enter principal amount: 10000\
+Enter time( in years): 5\
+Enter rate of interest( calculated yearly): 4.5
+
+Output:
+>Compound interest:  2461.82
+
+Testcase 3:\
+Input:
+>Enter principal amount: 500\
+Enter time( in years): 2\
+Enter rate of interest( calculated yearly): 1.5
+
+Output:
+>Compound interest:  15.11
